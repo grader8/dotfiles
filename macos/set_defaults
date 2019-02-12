@@ -1,0 +1,43 @@
+# Saving this initially as just a text file with a list of
+## of preferred settings
+## later to be turned into a script that can be automated
+
+###############################################################################
+# General UX/UI                                                               #
+###############################################################################
+
+# Set sidebar icon size to small (GR Note: What sidebar?)
+#defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+
+# Disable the “reopen windows when logging back in” option
+# This works, although the checkbox will still appear to be checked.
+defaults write com.apple.loginwindow TALLogoutSavesState -bool false
+defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
+
+# Automatically quit printer app once the print jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Disable the "Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Disable reopen on restart
+defaults write NSGlobalDomain ApplePersistence -bool false
+
+
+###############################################################################
+# Third Party Applications                                                    #
+###############################################################################
+
+# iTerm2
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true

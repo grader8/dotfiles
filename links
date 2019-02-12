@@ -1,0 +1,35 @@
+#! usr/bin/env bash
+#
+# List of files/folders to be symlinked.
+#
+# Symlink will be created from source (in dotfiles repo) to destination
+# (existing file to override).
+# - **Make sure** to leave an empty line at the end of the list
+# - Escape white spaces with \
+# - Line format: destination, source
+#   desination - The original file on disk
+#   source -     The symlinked file in the dotfiles repo folder structure,
+#                relative to the repo's base dir
+
+# Example:
+# ~/.bash_profile, /bash/.bash_profile
+# ~/.test, /dir12/.test
+
+# ZSH
+~/.zshrc, /zsh/.zshrc
+~/.oh-my-zsh/custom/themes/gr_clean.zsh-theme, /oh-my-zsh/gr_clean.zsh-theme
+
+# Git
+# ~/.gitconfig, /git/.gitconfig
+# ~/.git/.gitignore, /git/.gitignore
+
+# Sublime
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Markdown\ (Standard).sublime-settings, /sublime/Markdown\ (Standard).sublime-settings
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Markdown.sublime-settings, /sublime/Markdown.sublime-settings
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/MultiMarkdown.sublime-settings, /sublime/MultiMarkdown.sublime-settings
+
+
+# iTerm2
+# Does not need to be symlinked
+# defaults command instructs iterm2 to load appropriate settings file
