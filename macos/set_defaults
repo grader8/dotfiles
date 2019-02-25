@@ -6,8 +6,8 @@
 # General UX/UI                                                               #
 ###############################################################################
 
-# Set sidebar icon size to small (GR Note: What sidebar?)
-#defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+# Set Finder (or Forklift) sidebar icon size to small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
 # Disable the “reopen windows when logging back in” option
 # This works, although the checkbox will still appear to be checked.
