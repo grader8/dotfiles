@@ -29,6 +29,8 @@
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Markdown.sublime-settings, /sublime/Markdown.sublime-settings
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/MultiMarkdown.sublime-settings, /sublime/MultiMarkdown.sublime-settings
 
+# ForkLift
+~/Library/Preferences/com.binarynights.ForkLift-3.plist, /forklift/com.binarynights.ForkLift-3.plist
 
 # iTerm2
 # Does not need to be symlinked
