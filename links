@@ -16,8 +16,8 @@
 # ~/.test, /dir12/.test
 
 # ZSH
-~/.zshrc, /zsh/.zshrc
-~/.oh-my-zsh/custom/themes/gr_clean.zsh-theme, /oh-my-zsh/gr_clean.zsh-theme
+#~/.zshrc, /zsh/.zshrc
+#~/.oh-my-zsh/custom/themes/gr_clean.zsh-theme, /oh-my-zsh/gr_clean.zsh-theme
 
 # Git
 # ~/.gitconfig, /git/.gitconfig
