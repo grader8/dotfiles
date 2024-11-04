@@ -38,7 +38,7 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 [How to turn off System Integrity Protection](https://www.imore.com/el-capitan-system-integrity-protection-helps-keep-malware-away)
 
-#### Scrolling
+#### Scrolling, Mouse, Keyboard, etc
 ```sh
 # disable overscrolling 
 defaults write -g NSScrollViewRubberbanding -bool false
@@ -48,8 +48,12 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 ```
 [Turn off Overscrolling](https://www.cnet.com/how-to/disable-elastic-scrolling-in-os-x/)
-
 [Another reference for overscrolling](https://apple.stackexchange.com/questions/253111/how-to-disable-scroll-acceleration-in-macos-sierra)
+
+```
+# Disable “natural” (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+```
 
 #### Dock
 
