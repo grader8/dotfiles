@@ -1,6 +1,5 @@
 ### Require System Integrity Protection turned off 
 
-
 Disable Notification Center ([source](http://osxdaily.com/2012/08/06/disable-notification-center-remove-menu-bar-icon-os-x/))
 
 ```sh
@@ -11,9 +10,6 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.
 # enable
 launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 ```
-
- 
-
 
 ## Everything Else 
 ```sh
@@ -53,6 +49,18 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 ```
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Disable mouse acceleration
+defaults write NSGlobalDomain com.apple.mouse.linear -bool "false"
+
+# Set mouse tracking speed
+defaults write NSGlobalDomain com.apple.mouse.scaling -float "3.0"
+
+# Disable "Shake mouse pointer to locate"
+# 1. System Preferences
+# 2. Accessibility
+# 3. Display
+# 4. Uncheck option
 ```
 
 #### Dock
@@ -173,6 +181,9 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
+
+# Don't display screenshot thumbnail
+defaults write com.apple.screencapture "show-thumbnail" -bool "false"
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
