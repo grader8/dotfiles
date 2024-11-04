@@ -68,6 +68,9 @@ defaults delete com.apple.Dock autohide-delay
 # Turn off all dock bouncing
 defaults write com.apple.dock no-bouncing -bool TRUE; killall Dock
 
+# Change minimize/maximize window effect
+defaults write com.apple.dock mineffect -string "scale"
+
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
 
@@ -227,12 +230,14 @@ Clean up context menu
 #### References
 
 Some of this  was referenced from [here](https://gist.github.com/pala/2266811)
+
 https://github.com/orrsella/dotfiles/blob/master/setup-macos.sh
+
 https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
-
-
 https://dotfiles.github.io/
+
+Find all defaults: [macOS defaults list](https://macos-defaults.com/)
 
 Nice [tutorial](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/) on changing defaults
 
