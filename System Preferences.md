@@ -24,6 +24,9 @@ defaults write com.apple.finder CreateDesktop true; killall Finder
 
 # Delete or move preinstalled Apps 
 
+# Disable automatic termination of inactive apps
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
 # add here...
 ```
 ([source](http://www.tweaking4all.com/os-tips-and-tricks/macosx-tips-and-tricks/macos-x-how-to-remove-pre-installed-applications/))
