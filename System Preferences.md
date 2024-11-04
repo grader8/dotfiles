@@ -5,7 +5,8 @@ Disable Notification Center ([source](http://osxdaily.com/2012/08/06/disable-not
 
 ```sh
 # disable
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+## returns error without `2> /dev/null` appended at end
 
 # enable
 launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
