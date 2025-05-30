@@ -19,9 +19,18 @@
   * [Setup command line](https://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/)
 * [Vanilla](https://matthewpalmer.net/vanilla/) (menu bar modifications)
 * ItsyCal
-  - date format: `E, MM/dd  h:mm a` 
 * Supertab
 * Forklift
+
+#### Menu Bar
+* To effective replace notification center system clock with ItsyCal
+  * ItsyCal date format: `E, MM/dd  h:mm a`
+  * Turn off all notifications 
+  * Minimize visual impact of system clock
+    * System Preferences > Control Center > Clock Options
+      * Show date > "Never"
+      * Show day of the week > Off
+      * Style > "Analog"
 
 #### Optional
 * [geometry](https://github.com/geometry-zsh/geometry) zsh theme
